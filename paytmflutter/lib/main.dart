@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     log("Function Calling 3");
 
-     final url = Uri.parse('http://10.0.2.2:5001/api/dashboard/get-paytm-token');
+     final url = Uri.parse('http://54.176.58.162:5001/api/dashboard/get-paytm-token');
 
     Map<String, dynamic> body = {
       'amount': 1,
@@ -166,7 +166,7 @@ if(response.statusCode == 500){
 
   //verify-paytm-transaction
 
-  final url = Uri.parse('http://10.0.2.2:5001/api/dashboard/verify-paytm-transaction');
+  final url = Uri.parse('http://54.176.58.162:5001/api/dashboard/verify-paytm-transaction');
 
     final response = await http.post(
         url,
